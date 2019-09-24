@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %} {{title}} {% endblock %}
+{% block content %}
+  <h3>Search Kinases and Inhibitors</h3>
+  <br><br>
+  <p>Please enter the primary HGNC-approved gene name of a kinase (e.g. MTOR, MAP2K2, PAK1) in the search box below to view the corresponding information on the kinase or inhibitor(s) inhibiting the kinase:
+  <br><br>To learn more about approved human gene nomenclature, visit the <a href="https://www.genenames.org">HGNC website</a>.</p>
+  <br><br>
+  <form method="POST">
+        {{ form.csrf_token }}
+    <div class="row">
+     <div class="col-lg-4 mb-2">{{ form.select_mol(class="custom-select custom-select-md") }}</div>
+     <div class="col-lg-4 mb-2">{{ form.search_term(class="form-control", placeholder="e.g MTOR") }}</div>
+     <div class="col-lg-4"><button type="submit" class="btn btn-primary btn-lg"><i class="fas fa-search"></i> Search</button></div>
+    </div>
+  </form>
+{% endblock %}

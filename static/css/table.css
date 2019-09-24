@@ -1,0 +1,13 @@
+table, th, td {
+  border: none;
+
+}
+
+th, td {
+  text-align: center;
+}
+
+th {
+    background-color: #fafafa;
+}
+

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block title %} {{title}} {% endblock %}
+{% block content %}
+<div class="kinase-info">
+  <h2>{{query}} kinase</h2>
+  <hr class="default">
+  <br><br>
+  <h5>Full kinase name:</h5>
+  <br>{{ name }}
+  <br><br><br>
+  <h5>Primary gene symbol:</h5>
+  <br>{{ gene }}
+  <br><br><br>
+  <h5>Sequence similarities/Protein family:</h5>
+  <br>{{ family }}
+  <br><br><br>
+  <h5>Cellular location:</h5>
+  <br>{{ location }}
+  <br><br><br>
+  <h5>Known phosphosites:</h5>
+  <br>
+  View <a href="{{ url_for('browse', selection='Kinase', query=query)}}">phosphosites</a> associated with this kinase.
+  <br><br><br>
+  <h5>Commercial inhibitors:</h5>
+  <br>
+  View all <a href="{{ url_for('inhibitor_list', query=query)}}">commercially available agents</a> inhibiting this kinase.
+</div>
+{% endblock %}

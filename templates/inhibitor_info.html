@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block title %} {{title}} {% endblock %}
+{% block content %}
+<div class="inhibitor-info">
+ <h2>{{ inhibitor }}</h2>
+ <hr class="default">
+ <br><br>
+ <div class="row">
+ <div class="col-md-6">
+ <h5>Inhibited kinases:</h5>
+ <br>
+ {% for kinase in kinase_list %}
+<p><a href="{{ url_for('kinase_results', query=kinase.Gene_symbol) }}">{{ kinase.Gene_symbol }}</a></p>
+ {% endfor %}
+ <br>
+ <h5>Molecular Weight:</h5>
+ <br>
+  <p>{{ weight }}</p>
+ <br>
+ <h5>Chemical Formula:</h5>
+ <br>
+  <p>{{ formula }}</p>
+ <br>
+</div>
+<div class="col-md-6">
+ <h5>Chemical Structure:</h5>
+ <br>
+ <div style="display:none" class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+ <img src="{{ url }}" alt="Image not available" class="chemical-img" >
+</div>
+</div>
+</div>
+{% endblock %}

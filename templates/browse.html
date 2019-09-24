@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block title %} {{title}} {% endblock %}
+{% block content %}
+  <h3>Browse Phosphosites</h3>
+  <br>
+<p class="result-stats">{{ number }} Search Result(s) for "{{ query }}":</p>
+<br>
+<div class="table-responsive-md">
+  {{ data | safe }}
+</div>
+{% endblock %}

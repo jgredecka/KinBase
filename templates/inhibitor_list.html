@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %} {{title}} {% endblock %}
+{% block content %}
+ <h3>Search Kinase Inhibitors</h3>
+ <br>
+ <p>{{ inh_number }} Search Result(s) for "{{ gene_name }}":</p>
+ <br>
+ {% for inhibitor in inhibitor_list %}
+  <p><a href=" {{ url_for('inhibitor_info', inhibitor=inhibitor.Inhibitor) }} ">{{ inhibitor.Inhibitor }}</a></p>
+  <br>
+ {% endfor %}
+{% endblock %}

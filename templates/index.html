@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %} {{title}} {% endblock %}
+{% block content %}
+  <h3>About KinBase</h3>
+  <br>
+  <p>KinBase is a free and public data repository for kinase-related data. The mission of KinBase is to provide the scientific community with an easily accessible resource of kinase, commercial kinase inhibitor and phosphosite information.</p>
+  <br>
+  <p>KinBase offers three main types of search:</p>
+<div class="points"><i class="fas fa-check-circle"></i><span class="intro-points"> Kinases:</span> for searching human kinases of choice using HGNC-approved gene symbols.</div>
+<div class="points"><i class="fas fa-check-circle"></i><span class="intro-points"> Inhibitors:</span> for searching commercial kinase inhibitors using HGNC-approved gene symbols.</div>
+<div class="points"><i class="fas fa-check-circle"></i><span class="intro-points"> Phosphosites:</span> for browsing phosphosites according to specific parameters.</div>
+  <br>
+  <h3>Acknowledgements</h3>
+  <br>
+  <p>KinBase was developed by a group of post-graduate students as part of the Bioinformatics MSc programme at Queen Mary University of London under the supervision of Prof Conrad Bessant and Dr Fabrizio Smeraldi.</p>
+  <br>
+  <h3>References</h3>
+  <br>
+  <p>Hornbeck PV, Zhang B, Murray B, Kornhauser JM, Latham V, Skrzypek E PhosphoSitePlus, 2014: mutations, PTMs and recalibrations. Nucleic Acids Res. 2015 43:D512-20
+  <br><br>
+  The UniProt Consortium. UniProt: the universal protein knowledgebase. Nucleic Acids Res. 46: 2699 (2018)   
+  <br><br>
+  MRC PPU International Centre for Kinase Profiling (2017). Kinase Profiling Inhibitor Database. [online] Available at: http://www.kinase-screen.mrc.ac.uk/kinase-inhibitors [Accessed 31 Jan. 2019].
+  </p>
+{% endblock %}

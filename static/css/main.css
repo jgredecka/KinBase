@@ -1,0 +1,238 @@
+body {
+    background: "#ffffff";
+    font-family: font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.7px;
+}
+
+.container {
+    margin: auto; 
+    padding-top: 65px; 
+    padding-bottom: 50px;
+}
+
+.navbar {
+    top: 0;
+    background-color: #3D4750;
+    height: auto;
+    padding-left: 8px;
+}
+
+.navbar-brand img {
+    width: 187px;
+    height: 85px;
+}
+
+.navbar-toggler {
+    background-color: mediumseagreen !important;
+    font-size: 16px;
+}
+
+.nav-item a {
+    color: #e6e6e6 !important; 
+    font-size: 16px; 
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+nav li {
+    display: inline; 
+}
+
+.custom-item {
+    padding-right: 30px;
+}
+
+.btn-success {
+    background-color: mediumseagreen;
+    border: 0;
+    padding: 5px;
+    width: auto;
+    font-weight: bold;
+}
+
+.btn-lg {
+   width: 100%;
+   background-color: mediumseagreen;
+   border: none;
+   padding: 6px;
+   font-size: 18px;
+}
+
+.btn-lg:active {
+    background-color: mediumseagreen !important;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+hr.default {
+    border-top: 1px solid #cccccc;
+}
+
+a {
+    text-decoration: none !important;
+    color: dodgerblue;
+}
+
+.form-control {
+    width: 100%;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: darkgrey !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: darkgrey !important;
+}
+
+::placeholder {
+  color: darkgrey !important;
+}
+
+.chemical-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.inhibitor-info h5 {
+    font-weight: bold;
+    color: black;
+}
+
+.inhibitor-info h2 {
+    color: #48494a;
+}
+
+.kinase-info h2 {
+    color: #48494a;
+}
+
+.kinase-info h5 {
+    font-weight: bold;
+}
+
+.contact-header{
+    font-weight: bold;
+}
+
+.intro-points {
+    font-weight: bold;
+}
+
+.fa-check-circle {
+    color: mediumseagreen;
+}
+
+.points {
+    padding: 5px;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  left: 70px;
+  top: 10px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: mediumseagreen;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+}
+
+@media screen and (max-width: 414px and min-width: 375px) {
+    .navbar-toggler {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbar-brand img {
+    width: 150px;
+    height: auto;
+    }
+   .navbar-toggler {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .navbar {
+        padding-left: 7px;
+        padding-right: 12px;
+    }
+}
+
+
+@media (hover: hover) {
+  .nav-item a:hover {
+    color: mediumseagreen !important;
+    cursor: pointer;
+}
+
+  .nav-icon a:hover {
+    color: mediumseagreen !important;
+    cursor: pointer;
+}
+  .btn-lg:hover {
+    background-color: #2ec977;
+}
+   a:hover {
+    color: dodgerblue;
+}
+}

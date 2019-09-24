@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %} {{title}} {% endblock %}
+{% block content %}
+  <h3>Browse Phosphosites</h3>
+  <br>
+  <p>Use the search box below to browse phosphosites by chromosomal location (substrate gene locus), neighbouring amino acid sequences or substrate and kinase gene name:</p> 
+  <br><br>
+  <form method="POST">
+    {{ form.csrf_token }} 
+    <div class="row">
+      <div class="col-lg-4 mb-2">{{ form.select(class="custom-select custom-select-md") }}</div>
+      <div class="col-lg-4 mb-2">{{ form.user_query(class="form-control", placeholder="e.g MTOR") }}</div>
+    
+      <div class="col-lg-4"><button type="submit" class="btn btn-primary btn-lg"><i class="fas fa-search"></i> Search</button></div>
+    </div>
+  </form>
+  <br><br><br>
+<p>The five types of search available should have the following format:</p>
+<div class="points"><i class="fas fa-check-circle"></i><b> Substrate/Kinase Gene:</b> <a href="https://www.genenames.org">HGNC-approved</a> substrate or kinase gene symbol e.g. XRCC1, MAPKAPK2, CDK1.</div>
+<div class="points"><i class="fas fa-check-circle"></i><b> Neighbouring Sequences:</b> a sequence of 7 amino acids preceding (-) or following (+) the phosphosite of interest, e.g. YWFGRDK, PSMPCSV, YFLQLLK.</div>
+<div class="points"><i class="fas fa-check-circle"></i><b> Substrate Gene Locus:</b> chromosome number followed by chromosome arm, region, band and sub-band (if known), e.g. 11q12.3, 3q29, 6q25.1-q25.2.</div>
+{% endblock %}
