@@ -10,7 +10,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker, relationship, backref
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your-secret-key'
+app.config['SECRET_KEY'] = '19c6553e-99ed-4ee8-84be-fed6c78d21bc'
 
 # SQLAlchemy initial configuration:
 # Define a type of connection to the database.
